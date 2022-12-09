@@ -22,6 +22,7 @@
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
 			<a href="user_login.user"><h2>로그인</h2></a>
+		
 			</div>
 			<header class="codrops-header">
 				<a href="index.jsp"><h1>메인<span>dd</span></h1></a>
