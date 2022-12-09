@@ -24,9 +24,9 @@
 			<a href="user_login.user"><h2>로그인</h2></a>
 			</div>
 			<header class="codrops-header">
-				<a href="index.jsp"><h1>메인<span>dd</span></h1></a>
+				<a href="index.jsp"><h1>TRAVELER<span>여행사진을 공유해보세요</span></h1></a>
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index2.jsp">나의 갤러리</a>
-					<a href="index3.jsp">마이페이지</a>
+					<a class="current-demo" href="index2.jsp">MY GALLERY</a>
+					<a href="index3.jsp">MY PAGE</a>
 				</nav>
 			</header>
