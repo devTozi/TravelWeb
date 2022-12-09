@@ -15,8 +15,8 @@
 .clearfix:after { clear: both; }
 
 body {
-	background: #D3EEE2;
-	color: #2E3444;
+	background: rgb(255, 255, 255);
+	color: rgb(68, 68, 68);
 	font-size: 100%;
 	line-height: 1.25;
 	font-family: 'Lato', sans-serif;
@@ -24,13 +24,13 @@ body {
 }
 
 a {
-	color: #FF2A48;
+	color: #3d8ef2;
 	text-decoration: none;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: #2E3444;
+	color: rgb(13, 104, 255);
 }
 
 .codrops-header {
@@ -41,14 +41,14 @@ a:hover, a:focus {
 
 .codrops-header h1 {
 	margin: 0;
-	font-size: 2.5em;
+	font-size: 3.0em;
 	font-weight: 900;
 }
 
 .codrops-header h1 span {
 	display: block;
 	padding: 0.2em 0 0.6em 0.1em;
-	font-size: 0.6em;
+	font-size: 0.4em;
 	font-weight: 300;
 }
 

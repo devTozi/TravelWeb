@@ -123,16 +123,16 @@
 }
 
 /* Title */
-.grid li h3 {
+#grid li h3 {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	margin: 0;
 	padding: 20px;
 	width: 100%;
-	background: #2E3444;
-	color: #D3EEE2;
-	text-align: right;
+	background: #ffffff;
+	color: #0080ff;
+	text-align: left;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 800;
@@ -164,7 +164,7 @@
 
 .grid li.shown:hover > a::before {
 	border-width: 14px;
-	border-color: #2E3444;
+	border-color: #f2f2f2;
 }
 
 /* Animations */

@@ -1,11 +1,11 @@
-package com.TravelWeb.board.service;
+package com.travelweb.board.service;
 
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.TravelWeb.board.model.BoardVO;
+import com.travelweb.board.model.BoardVO;
 
 public interface BoardService {
 	
