@@ -167,6 +167,40 @@
 	border-color: #f2f2f2;
 }
 
+/* user - login */
+.user-form{
+	
+	width : 300px;
+	border: 1px solid #d6d6d6 ;
+	border-radius: 12px;
+	padding-top : 30px;
+	padding-bottom : 50px;
+	
+}
+.user-form h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size : 1.8em;
+}
+
+.grid-wrap span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:800;
+}
+
+
+.grid-wrap span{
+	
+	color : gray;
+}
+
+input{
+	border:solid 1px #d6d6d6; 
+	border-radius:6px;
+	font-family: 'Montserrat', sans-serif;
+	font-size : 1em;
+}
+
+
 /* Animations */
 
 /* Swipe right */

@@ -1,11 +1,11 @@
-package com.travelweb.user.model;
+package com.TravelWeb.user.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.travelweb.util.JDBCUtil;
+import com.TravelWeb.util.JDBCUtil;
 
 
 public class UserDAO {
@@ -32,9 +32,9 @@ public class UserDAO {
 	}
 
 	// 4. 필요한 데이터베이스 변수 선언
-	public String URL = "jdbc:oracle:thin:@localhost:1521:xe";
-	public String UID = "jsp";
-	public String UPW = "jsp";
+	public String URL = "jdbc:oracle:thin:@172.30.1.17:1521:xe";
+	public String UID = "project";
+	public String UPW = "project";
 
 	private Connection conn;
 	private PreparedStatement pstmt;
@@ -66,8 +66,6 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-
-			// close 작업도 매번 반복되기 때문에 메서드화함
 			JDBCUtil.close(conn, pstmt, rs);
 		}
 
@@ -77,7 +75,7 @@ public class UserDAO {
 	// 6. 회원 가입 메서드
 	public void join(UserVO vo) {
 
-		String sql = "insert into users values(?,?,?,?,?)";
+		String sql = "insert into users values(?,?,?,?,?,?)";
 
 		try {
 
@@ -89,6 +87,7 @@ public class UserDAO {
 			pstmt.setString(3, vo.getName());
 			pstmt.setString(4, vo.getEmail());
 			pstmt.setString(5, vo.getGender());
+			pstmt.setInt(6, vo.getBirth());
 
 			pstmt.executeUpdate(); // 실행(성공 시 1, 실패 시 0 반환)
 
@@ -122,7 +121,7 @@ public class UserDAO {
 				String name = rs.getString("name");
 				String email = rs.getString("email");
 				String gender = rs.getString("gender");
-				String birth = rs.getString("birth");
+				int birth = rs.getInt("birth");
 
 				vo = new UserVO(id2, null, name, email, gender, birth);
 			}
@@ -156,7 +155,7 @@ public class UserDAO {
 				String name = rs.getString("name");
 				String email = rs.getString("email");
 				String gender = rs.getString("gender");
-				String birth = rs.getString("birth");
+				int birth = rs.getInt("birth");
 
 				vo = new UserVO(id2, null, name, email, gender, birth);
 			}

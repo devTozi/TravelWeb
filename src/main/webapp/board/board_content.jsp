@@ -7,40 +7,23 @@
 
 <div align="center" class="div_center">
 
-	<h3>게시글 내용 보기</h3>
-	<hr>
+	<h3>TravelWeb</h3>
+	
 	<table border="1" width="500">
-		<tr>
-			<td width="20%">글번호</td>
-			<td width="30%">${vo.bno }</td>
-			
-			<td width="20%">조회수</td>
-			<td width="30%">${vo.hit }</td>
-		</tr>
-		<tr>
+	
+	
+	
 			<td>작성자</td>
-			<td>${vo.writer }</td>
+			${vo.writer }
 			
-			<td>작성일</td>
-			<td ><fmt:formatDate value="${vo.regdate}" pattern = "yyyy-MM-dd HH시mm분ss초"/></td>
-		</tr>
-		
-		<tr>
-			<td width="20%">글제목</td>
-			<td colspan="3">${vo.title }</td>
-		</tr>
-		<tr>
-			<td width="20%">글내용</td>
-			<td colspan="3" height="120px">${vo.content }</td>
-		</tr>
+				<li><a href="#"><img src="image.jpg" alt="image">
+			<td>글제목</td>
 		
 		<tr>
 			<td colspan="4" align="center">
+				<input type="button" value="♥" ">&nbsp;&nbsp;
 				<input type="button" value="목록" onclick="location.href='board_list.board'">&nbsp;&nbsp;
-				<c:if test="${sessionScope.user_id != null }">
-				<input type="button" value="수정" onclick="location.href='board_modify.board?bno=${vo.bno}&writer=${vo.writer }'">&nbsp;&nbsp;
-				<input type="button" value="삭제" onclick="location.href='board_delete.board?bno=${vo.bno}&writer=${vo.writer }'">&nbsp;&nbsp;
-				</c:if>
+				
 			</td>
 		</tr>
 	</table>

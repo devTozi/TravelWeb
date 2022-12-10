@@ -1,11 +1,11 @@
-package com.travelweb.user.service;
+package com.TravelWeb.user.service;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.travelweb.user.model.UserDAO;
-import com.travelweb.user.model.UserVO;
+import com.TravelWeb.user.model.UserDAO;
+import com.TravelWeb.user.model.UserVO;
 
 public class UserServiceImpl implements UserService {
 	
@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
 		String gender = request.getParameter("gender");
-		String birth = request.getParameter("birth");
+		int birth = Integer.parseInt(request.getParameter("birth"));
 		
 		// 아이디 or 이메일 중복 검사 후 가입처리
 		UserDAO dao = UserDAO.getInstance();
@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
 		if(result >= 1) { // 중복 x -> 가입
 			return 1; // 중복의 의미 1
 		}else {
-			UserVO vo = new UserVO();
+			UserVO vo = new UserVO(id, pw, name, email, gender, birth); // 여기 수정
 			dao.join(vo);
 			return 0; // 성공의 의미 0
 		}

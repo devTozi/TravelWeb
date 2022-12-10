@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/include/header.jsp"%>
 <section>
-	<div align="center">
+	<div align = "center" class = "user-wrap">
 		
 		
 		<img alt="프로필 이미지" src="">

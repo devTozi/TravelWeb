@@ -2,18 +2,18 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/include/header.jsp"%>
 <section class="grid-wrap">
-	<div align="center">
-		<form action="loginform.user" method="post">
+
+	<div align = "center" class = "user-wrap">
+		<form action="loginform.user" method="post" class = "user-form">
 
 			<table>
-				<span><b>JOIN</b></span>
-				<br>
-				<span>반가워요!<br>travel gallery를 이용하시려면 가입 부탁드려요!
-				</span>
+				<h3>JOIN</h3>
+				<p>반가워요!<br><span>TRAVELER</span>를 이용하시려면<br>가입 부탁드려요!
+				</p>
 				<br>
 				<!-- 프로필 이미지 -->
 				<tr>
-					<td>프로필 이미지
+					<td>프로필 이미지 <br>
 						<input type="file" accept="image/jpeg" name="profileimage" value="프로필이미지">
 					</td>
 				</tr>

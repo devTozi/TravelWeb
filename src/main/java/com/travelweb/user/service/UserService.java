@@ -1,9 +1,9 @@
-package com.travelweb.user.service;
+package com.TravelWeb.user.service;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.travelweb.user.model.UserVO;
+import com.TravelWeb.user.model.UserVO;
 
 public interface UserService {
 	

@@ -1,4 +1,4 @@
-package com.travelweb.user.model;
+package com.TravelWeb.user.model;
 
 public class UserVO {
 	
@@ -8,11 +8,11 @@ public class UserVO {
 	private String name;
 	private String email;
 	private String gender;
-	private String birth;
+	private int birth;
 	
 	public UserVO() {}
 
-	public UserVO(String id, String pw, String name, String email, String gender, String birth) {
+	public UserVO(String id, String pw, String name, String email, String gender, int birth) {
 		super();
 		this.id = id;
 		this.pw = pw;
@@ -62,11 +62,11 @@ public class UserVO {
 		this.gender = gender;
 	}
 
-	public String getBirth() {
+	public int getBirth() {
 		return birth;
 	}
 
-	public void setBirth(String birth) {
+	public void setBirth(int birth) {
 		this.birth = birth;
 	}
 	

@@ -2,13 +2,12 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/include/header.jsp"%>
 <section>
-	<div align="center">
+	<div align = "center" class = "user-wrap">
 
-		<form action="loginform.user" method="post">
+		<form action="loginform.user" method="post" class = "user-form">
 
 			<table>
-				<span><b>회원정보수정</b></span>
-				<br>
+				<h3>EDIT PROFILE</h3>
 				<!-- 프로필 이미지 -->
 				<tr>
 					<td>프로필 이미지 수정 <input type="file" accept="image/jpeg"

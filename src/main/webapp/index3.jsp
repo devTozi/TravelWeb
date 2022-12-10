@@ -2,17 +2,16 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/include/header.jsp"%>
 	<section class="grid-wrap">
-		<div align = "center">
-			<form action="loginform.user" method="post">
-				<span><b>LOGIN</b></span><br>
-				<span>안녕하세요.<br>travel gallery에 오신것을 환영합니다.</span><br>
+		<div align = "center" class="user-wrap">
+			<form action="loginform.user" method="post" class="user-form">
+				<h3>LOGIN</h3>
+				<p>안녕하세요.<br><span>TRAVEL</span>와 함께 <br>여행 사진을 공유해보세요!</p><br>
 				
 				<input type="text" name="id" placeholder="ID"><br>
 				<input type="password" name="pw" placeholder="PASSWORD"><br>
 				
 				<input type="submit" value="로그인" class="btn btn-success">
 				
-				<input type="button" value="회원가입" class="btn btn-success">
 			</form>
 		</div>
 	</section>

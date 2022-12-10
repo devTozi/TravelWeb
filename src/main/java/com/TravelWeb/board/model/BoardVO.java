@@ -1,4 +1,6 @@
-package com.travelweb.board.model;
+package com.TravelWeb.board.model;
+
+import java.sql.Timestamp;
 
 public class BoardVO {
 	
@@ -9,11 +11,11 @@ public class BoardVO {
 	private String content;
 	private int hit;
 	private int likes;
+	private Timestamp regdate;
 	
-	public BoardVO() {
-	}
+	public BoardVO() {}
 
-	public BoardVO(int bno, String image, String id, String title, String content, int hit, int likes) {
+	public BoardVO(int bno, String image, String id, String title, String content, int hit, int likes, Timestamp legdate) {
 		super();
 		this.bno = bno;
 		this.image = image;
@@ -22,6 +24,14 @@ public class BoardVO {
 		this.content = content;
 		this.hit = hit;
 		this.likes = likes;
+	}
+
+	public Timestamp getRegdate() {
+		return regdate;
+	}
+
+	public void setRegdate(Timestamp regdate) {
+		this.regdate = regdate;
 	}
 
 	public int getBno() {

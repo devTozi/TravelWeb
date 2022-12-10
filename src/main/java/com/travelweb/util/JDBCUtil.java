@@ -1,4 +1,4 @@
-package com.travelweb.util;
+package com.TravelWeb.util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

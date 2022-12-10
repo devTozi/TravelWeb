@@ -6,37 +6,37 @@
 	<h3>게시판 글 작성 페이지</h3>
 	<hr>
 	
-	<form action="registForm.board" method="post">
-		<table border="1" width="500">
-			<tr>
-				<td>작성자</td>
-				<td>
-					<input type="text" name="writer" value="${sessionScope.user_id}" size="10" readonly required>
-				</td>
-			</tr>
-			<tr>
-				<td>글 제목</td>
-				<td>
-					<input type="text" name="title" required>
-				</td>
-			</tr>
-			<tr>
-				<td>글 내용</td>
-				<td>
-					<textarea rows="10" style="width: 95%;" name="content"></textarea>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<input type="submit" value="작성 완료" >
-					&nbsp;&nbsp;
-					<input type="button" value="목록" onclick="location.href='board_list.board'">         
-				</td>
-			</tr>
+		<table>
+				<br>
 			
-		</table>
-	</form>
-	
-</div>
+				<br>
+				<!-- 프로필 이미지 -->
+				
+				
+				<tr>
+					<td><input type="text" name="title" placeholder="제목"
+						value="<%--${vo.name}--%>" required="required"> <br>
+					<td>
+				</tr>
+				<tr>
+				<td width="20%">글내용</td>
+				<td colspan="3" height="120px">${vo.content }</td>
+				</tr>
+				
+				<tr>
+					<td>사진등록
+						<input type="file" accept="image/jpeg" name="profileimage" value="프로필이미지">
+					</td>
+				</tr>
+				
+				<tr>
+				<td><input type="submit" value="등록하기" class="btn btn-success"onclick="location.href='board_content.board'">  
+				<input type="submit" value="취소하기" class="btn btn-success"onclick="location.href='board_list.board'"><td>
+				</tr>
+			</table>
+			
+		</form>
+	</div>
+</section>
 
 <%@ include file = "../include/footer.jsp" %>
