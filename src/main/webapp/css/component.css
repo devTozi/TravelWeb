@@ -141,6 +141,23 @@
 	transition: transform 0.2s, color 0.2s;
 }
 
+
+/* 게시판 좋아요, 작성자*/
+#grid li a span {
+	position:absolute;
+	top:20px;
+	left:20px;
+	/*float : left;*/
+}
+
+#grid li a span.id {
+	position:absolute;
+	top:33%;
+	right:20px;
+	
+}
+
+
 /* Pseudo element for hover effect */
 .grid li > a::before {
 	position: absolute;
@@ -166,6 +183,45 @@
 	border-width: 14px;
 	border-color: #f2f2f2;
 }
+
+/* user - login */
+.user-form{
+	
+	width : 300px;
+	border: 1px solid #d6d6d6 ;
+	border-radius: 12px;
+	padding-top : 30px;
+	padding-bottom : 50px;
+	
+}
+.user-form h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size : 1.8em;
+}
+
+.user-form .noti{
+	font-size : 12px;
+	color : #919191;
+}
+
+.grid-wrap span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:800;
+}
+
+
+.grid-wrap span{
+	
+	color : gray;
+}
+
+input{
+	border:solid 1px #d6d6d6; 
+	border-radius:6px;
+	font-family: 'Montserrat', sans-serif;
+	font-size : 1em;
+}
+
 
 /* Animations */
 

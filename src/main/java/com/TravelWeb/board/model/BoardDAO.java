@@ -1,10 +1,12 @@
-package com.travelweb.board.model;
+package com.TravelWeb.board.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+
+import com.TravelWeb.util.JDBCUtil;
 
 
 public class BoardDAO {
@@ -23,6 +25,8 @@ public class BoardDAO {
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 			} catch (Exception e) {
 				System.out.println("드라이버클래스 로드에러");
+			} finally {
+				JDBCUtil.close(conn, pstmt, rs);
 			}
 		}
 		
@@ -58,7 +62,9 @@ public class BoardDAO {
 				
 			} catch (Exception e) {
 				e.getStackTrace();
-			} 
+			} finally {
+				JDBCUtil.close(conn, pstmt, rs);
+			}
 			
 			
 		}
@@ -102,7 +108,9 @@ public class BoardDAO {
 				
 			} catch (Exception e) {
 				e.getStackTrace();
-			} 
+			} finally {
+				JDBCUtil.close(conn, pstmt, rs);
+			}
 			return list;
 		}
 		
@@ -135,7 +143,9 @@ public class BoardDAO {
 				
 			} catch(Exception e) {
 				e.getStackTrace();
-			} 
+			} finally {
+				JDBCUtil.close(conn, pstmt, rs);
+			}
 			
 			
 			return vo;

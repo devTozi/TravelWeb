@@ -2,15 +2,16 @@
     pageEncoding="UTF-8"%>
 <!-- footer 시작 -->
 			<section class="related">
-				<p>If you enjoyed this demo you might also like:</p>
-				<a href="http://tympanus.net/Development/ThumbnailGridAnimations/">
-					<img src="http://tympanus.net/codrops/wp-content/uploads/2013/10/ThumbnailGridAnimations1-300x162.jpg" />
-					<h3>Animations for Thumbnail Grids</h3>
-				</a>
-				<a href="http://tympanus.net/Development/GridLoadingEffects/">
-					<img src="http://tympanus.net/codrops/wp-content/uploads/2013/07/GridLoadingEffects-300x162.png" />
-					<h3>Grid Loading Effects</h3>
-				</a>
+			
+				<div id="footer">
+				<p class="f_logo">TRAVELER</p>
+				<p>(주)트래블러 공동대표 : 이성호, 서현욱</p>
+				<p><sapn>ADDRESS</sapn> : 서울특별시 강남구 에스코빌딩</p>
+				<p><sapn>NUMBER</sapn> : 123-456-789</p>
+				<p>사업자등록번호 : 123-456-789</p>
+				<p><sapn>Copyright © By TRAVELER 2022.12.13~</p>
+
+				</div>
 			</section>
 		</div><!-- /container -->
 		<script src="js/masonry.pkgd.min.js"></script>

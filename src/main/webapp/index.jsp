@@ -8,8 +8,14 @@
 
 			<ul class="grid swipe-right" id="grid">
 				<!--  <c:forEach var="vo" items="${list }" varStatus="num">-->
-					<li><a href="#"><img src="img/dummy.png" alt="dummy">
-						<h3>title</h3></a></li>
+					<li>
+						<a href="#">
+						<img src="img/dummy.png" alt="dummy">
+						<h3>title${vo.title}<span class = "id" align = "right">id${vo.id}</span></h3>
+						
+						<span class = "like">❤ 123${vo.like}</span>
+						</a>
+					</li>
 				<!--</c:forEach>-->
 			</ul>
 

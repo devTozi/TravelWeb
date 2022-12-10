@@ -1,4 +1,4 @@
-package com.travelweb.board.model;
+package com.TravelWeb.board.model;
 
 public class BoardVO {
 	
